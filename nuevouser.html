@@ -2,19 +2,13 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Primaria Independecia</title>
+  <title>Registrate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- Le styles -->
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="sortable.min.js"></script>
-  <link rel="stylesheet" href="sortable-theme-bootstrap.css" />
-                   
-<!--<link rel="stylesheet" type="text/css" href="kickstart.css" media="all" /> 
-<!--<script type="text/javascript" src="kickstart.js"></script>       -->
   <style>
 
     /* GLOBAL STYLES
@@ -25,8 +19,8 @@
       padding-bottom: 40px;
       color: #5a5a5a;
     }
-	
-	.panel panel-default {
+
+ .form-signin {
         max-width: 300px;
         padding: 19px 29px 29px;
         margin: 0 auto 20px;
@@ -96,6 +90,7 @@
     }
 
 
+
     /* RESPONSIVE CSS
     -------------------------------------------------- */
 
@@ -111,7 +106,6 @@
       }
 
     
-    }
 
 
     @media (max-width: 767px) {
@@ -120,15 +114,20 @@
         margin: -20px;
       }
 
-     
+
     }
     </style>
-  
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <![endif]-->
+  <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+  <script type="text/javascript" src="ScriptLibrary/jquery-latest.pack.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
   </head>
 
@@ -154,7 +153,8 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-              <li><a href="index.html">Home</a></li>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="pizarra.html">Pizarra</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mas <b class="caret"></b></a>
@@ -165,7 +165,7 @@
                     <li><a href="mas.html">Contacto</a></li>
                     <li class="divider"></li>
                     <li class="nav-header">Alumnos</li>
-                    <li><a href="#">Calificaciones</a></li>
+                    <li><a href="calificaciones.html">Calificaciones</a></li>
                     <li><a href="#">Pizarron</a></li>
                   </ul>
                 </li><!--
@@ -175,7 +175,6 @@
            
               </ul>
             <ul class="nav navbar-nav navbar-right">
-        <li><a href="nuevouser.html"><img src="bootstrap/img/user.png" alt=""> Sign Up</a></li>
          <li class="active"><li><a href="login.html"><img src="bootstrap/img/logi.png" alt=""> Login</a></li>
       </ul>
             </div><!--/.nav-collapse -->
@@ -205,83 +204,52 @@
   <tr>
     <td>&nbsp;</td>
   </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
 </table>
 
 
-  <div class="well">
-<div class="panel panel-info">
-  <div class="panel-heading">
-   <h3 class="panel-title">EVENTOS&nbsp;&nbsp;<span class="badge badge-info">5</span></h3>
+ <div class="container">
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Nuevo Usuario</h2>
+        <input type="text" name="username" class="input-block-level" placeholder="Nombre de usuario">
+        <input type="text" name="nombre" class="input-block-level" placeholder="Nombre completo">
+        <input type="text" name="domicilio"class="input-block-level" placeholder="Domicilio">
+        <input type="text" name="telefono" class="input-block-level" placeholder="Telefono">
+        <input type="password" name="password1" class="input-block-level" placeholder="Contraseña">
+        <input type="password" name="password2" class="input-block-level" placeholder="Verifique contraseña">
+        
+        <button class="btn btn-large btn-primary" type="submit">Registráte</button>
+      </form>
+
+    </div> <!-- /container -->
+
     
-  </div>
-  <div class="panel-body">
-    
-<table class="table table-bordered table-hover sortable-theme-bootstrap" data-sortable="true" data-toggle="table">
 
-    <thead>
-    <tr>
-        <th>Evento</th>
-        <th>Descripcion</th>
-        <th>Fecha</th>
-        <th>Mas</th>
-    </tr>
-    </thead>
-   
-  <tbody><tr class="active">
-    <td>jncfhuvbu</td>
-    <td>gvfcvtvygv</td>
-    <td>gvygvcygv</td>
-    <td>cvfcghv gu</td>
-  </tr>
-  <tr class="success">
-    <td>gvcyvubhbn</td>
-    <td>bhbhbuhbh</td>
-    <td>bhbhbbhub</td>
-    <td>bhuhubh</td>
-  </tr>
-  <tr class="info">
-    <td>hubhbhub</td>
-    <td>bhbhbh</td>
-    <td>hbhbhb</td>
-    <td>hbhbhb</td>
-  </tr>
-  <tr class="warning">
-    <td>bhbhbhb</td>
-    <td>bhbhbh</td>
-    <td>bhbgvg</td>
-    <td>vfg</td>
-  </tr>
-  <tr class="danger">
-    <td>fcf</td>
-    <td>cf</td>
-    <td>c</td>
-    <td>fc</td>
-  </tr>
-<tr>
-    <td><a href="#"><i class="icon-plus-sign"></a></td>
-    
-  </tr>
-
-</tbody></table>
-
-  </div>
-  
-
-</div>
-</div>
-
+      <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-
-        <p>&copy; <a href="#"></a> &middot; <a href="#"></a></p>
+         
+                                
+        
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#"></a></p>
       </footer>
 
     </div><!-- /.container -->
 
-    
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
     <script src="bootstrap/js/holder/holder.js"></script>
   </body>
 </html>
